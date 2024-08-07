@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Notes
+
+```
+React App:
+In a React App, we can't able to see the content of the webpage in the source code displayed in the browser this is because the React manipulates the code inside the browser and runs inside the browser.
+
+Next App:
+In a Next App, the content is visible in the webpage, so that the page scrawler can find the actual content and its good for the SEO purpose.
+Here, the entire HTML in rendered in the sever and returned to the client side.
+
+```

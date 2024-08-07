@@ -89,6 +89,8 @@ or automatically behind the scenes by NextJS.
 
 
 ### 92. Reserved File Names, Custom Components & How To Organize A NextJS Project
+[course - Next.js Filename Conventions](https://www.udemy.com/course/nextjs-react-the-complete-guide/learn/lecture/41161954#notes)
+[Next.js Docs- Filename Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
 [Project Organization](https://nextjs.org/docs/app/building-your-application/routing/colocation)
 
 ```
@@ -99,8 +101,17 @@ we can have a components folder inside the app folder, so that the header.js fil
 treated as a routable.
 Even we can move them outside of the app folder.
 
-
 ```
+Important: These filenames are only reserved when creating them inside of the app/ folder (or any subfolder). Outside of the app/ folder, these filenames are not treated in any special way.
+
+| FileName    | Description |
+| :---        |    :----:   |  
+| page.js     | Create a new page (e.g., app/about/page.js creates a <your-domain>/about page)       | 
+| layout.js   | Create a new layout that wraps sibling and nested pages        | 
+| not-found.js | Fallback page for "Not Found" errors (thrown by sibling or nested pages or layouts) |
+| error.js |   Fallback page for other errors (thrown by sibling pages or nested pages or layouts) |
+|loading.js | Fallback page which is shown whilst sibling or nested pages (or layouts) are fetching data |
+|route.js | Allows you to create an API route (i.e., a page which does NOT return JSX code but instead data, e.g., in the JSON format) |
 
 
 

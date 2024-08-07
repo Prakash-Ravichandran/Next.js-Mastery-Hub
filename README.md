@@ -66,3 +66,27 @@ Using the <Link> tag it ensures that the browser doesn't reloads, maintains the 
 
 ```
 
+### 91. Working with Pages & Layouts
+
+
+```
+
+why & how the <head> tag is injected by next.js 
+
+metadata = {
+    title: "NextJS Course App",
+    description: 'Your first NextJS app !',
+    ...other properties,
+}
+
+metadata={} is a reserved keyword for setting up heading and metadata related fields that should an object with essential props.
+will then applied to all pages that are covered by that layout.
+
+So, that's why we don't have the head section here,simply because all the content that goes into head is set with that metadata,
+or automatically behind the scenes by NextJS.
+
+```
+
+
+
+

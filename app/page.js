@@ -1,4 +1,6 @@
 export default function Home() {
+
+  console.log("* * * Executing the Home Component * * *");
   return (
     <main>
       <img src="/logo.png" alt="A server surrounded by magic sparkles." />

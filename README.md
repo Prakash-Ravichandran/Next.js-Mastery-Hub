@@ -51,3 +51,18 @@ In a Next App, the content is visible in the webpage, so that the page scrawler 
 Here, the entire HTML in rendered in the sever and returned to the client side.
 
 ```
+
+
+### 90. Navigating Between the pages - Wrong & Right Solution
+
+```
+<a>:
+
+Using <a> anchor tags as links, changes our concept of SPA -> Multiple pages, reloads the UI, vanishes the state.
+
+<Link>
+
+Using the <Link> tag it ensures that the browser doesn't reloads, maintains the state.
+
+```
+

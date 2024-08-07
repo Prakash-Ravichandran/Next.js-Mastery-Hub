@@ -42,7 +42,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ```
 React App:
-In a React App, we can't able to see the content of the webpage in the source code displayed in the browser this is because the React manipulates the code inside the browser and runs inside the browser.
+In a React App, we can't able to see the content of the webpage in the source code displayed 
+in the browser this is because the React manipulates the code inside the browser and runs inside the browser.
 
 Next App:
 In a Next App, the content is visible in the webpage, so that the page scrawler can find the actual content and its good for the SEO purpose.

@@ -1,3 +1,5 @@
+import Header from "@/components/header";
+
 export default function Home() {
 
   console.log("* * * Executing the Home Component * * *");
@@ -7,6 +9,7 @@ export default function Home() {
       <h1>Welcome to this NextJS Course!</h1>
       <p>🔥 Let&apos;s get started! 🔥</p>
       <a href="/about">About us</a>
+      <Header />
     </main>
   );
 }

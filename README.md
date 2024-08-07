@@ -88,5 +88,19 @@ or automatically behind the scenes by NextJS.
 ```
 
 
+### 92. Reserved File Names, Custom Components & How To Organize A NextJS Project
+
+```
+page.js, layout.js are the Reserved File Names which has special features like Routable, Layouted etc, other than components.
+
+we can have a components folder inside the app folder, so that the header.js file is not treated as a routable.
+Even we can move them outside of the app folder
+
+[Project Organization](https://nextjs.org/docs/app/building-your-application/routing/colocation)
+
+```
+
+
+
 
 

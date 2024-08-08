@@ -89,9 +89,9 @@ or automatically behind the scenes by NextJS.
 
 
 ### 92. Reserved File Names, Custom Components & How To Organize A NextJS Project
-[course - Next.js Filename Conventions](https://www.udemy.com/course/nextjs-react-the-complete-guide/learn/lecture/41161954#notes)
-[Next.js Docs- Filename Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
-[Project Organization](https://nextjs.org/docs/app/building-your-application/routing/colocation)
+[course - Next.js Filename Conventions](https://www.udemy.com/course/nextjs-react-the-complete-guide/learn/lecture/41161954#notes) <br/>
+[Next.js Docs- Filename Conventions](https://nextjs.org/docs/app/api-reference/file-conventions)<br/>
+[Project Organization](https://nextjs.org/docs/app/building-your-application/routing/colocation)<br/>
 
 ```
 page.js, layout.js are the Reserved File Names which has special features like Routable, 
@@ -112,6 +112,19 @@ Important: These filenames are only reserved when creating them inside of the ap
 | error.js |   Fallback page for other errors (thrown by sibling pages or nested pages or layouts) |
 |loading.js | Fallback page which is shown whilst sibling or nested pages (or layouts) are fetching data |
 |route.js | Allows you to create an API route (i.e., a page which does NOT return JSX code but instead data, e.g., in the JSON format) |
+
+
+### 94. Configuring Dynamic Routes & Route Parameters
+
+/blog/a = /blog/[slug]
+/blog/b = /blog/[slug]
+
+- with the help of [slug/id]/page.js we canable to setup dynamic routes.
+- all the page.js components will defautly receive a prop called ```params.slug``` can access dynamic route segment.
+
+
+
+
 
 
 

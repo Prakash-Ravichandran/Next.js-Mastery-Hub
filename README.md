@@ -116,8 +116,8 @@ Important: These filenames are only reserved when creating them inside of the ap
 
 ### 94. Configuring Dynamic Routes & Route Parameters
 
-/blog/a = /blog/[slug]
-/blog/b = /blog/[slug]
+/blog/a = /blog/[slug] </br>
+/blog/b = /blog/[slug] </br>
 
 - with the help of [slug/id]/page.js we canable to setup dynamic routes.
 - all the page.js components will defautly receive a prop called ```params.slug``` can access dynamic route segment.

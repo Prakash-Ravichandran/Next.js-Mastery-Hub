@@ -123,6 +123,12 @@ Important: These filenames are only reserved when creating them inside of the ap
 - all the page.js components will defautly receive a prop called ```params.slug``` can access dynamic route segment.
 
 
+### 95. Exercise with 3 routes
+
+- 3 routes /meals, /community, /meals/share has been created
+
+
+
 
 
 

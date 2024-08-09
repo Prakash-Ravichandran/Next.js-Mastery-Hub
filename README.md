@@ -126,7 +126,7 @@ Important: These filenames are only reserved when creating them inside of the ap
 ### 95. Exercise with 3 routes
 
 - 3 routes /meals, /community, /meals/share has been created
-
+- The Name of the Component isn't important, but you must export a component with the page.js file.
 
 
 

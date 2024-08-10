@@ -129,6 +129,13 @@ Important: These filenames are only reserved when creating them inside of the ap
 - The Name of the Component isn't important, but you must export a component with the page.js file.
 - Next.js is very brillant with finding dyanamic routes/static routes.
 
+### 98. The concept of Layout
+
+- The layout.js in the app/ will act as wrapper for the whole app.
+- The layout.js in the meals/ will act as a inner wrapper for the meals/ route.
+- These things happen with the help of ```children``` prop.
+#### Note: we are not instanciating <MealsLayout>, <Layout>, Next.js will do it for us, other contents will act as a child.
+
 
 
 

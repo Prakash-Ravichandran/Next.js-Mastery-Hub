@@ -136,6 +136,10 @@ Important: These filenames are only reserved when creating them inside of the ap
 - These things happen with the help of ```children``` prop.
 #### Note: we are not instanciating <MealsLayout>, <Layout>, Next.js will do it for us, other contents will act as a child.
 
+### 99. Adding a custom component Layout
+
+- According to the next.js project organization, its better to keep the components/ folder outside of the app/  because let next.js app/ deals only with routing alone.
+- In next.js we can directly import images from the assets/, and its imported as an object (logoImg) and we can start assigning it to the src attribute of image.
 
 
 

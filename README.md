@@ -159,7 +159,7 @@ Important: These filenames are only reserved when creating them inside of the ap
  Next.js: <Image src={logoImg} alt="A Plate with food on it"/>
 
 ```
-- Advantages of <Image> in Next.js:
+- Advantages of ```<Image/>``` in Next.js:
 
 1. set the lazy loading automatically
 2. sets width, height based on the viewport size.

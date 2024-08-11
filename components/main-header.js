@@ -1,7 +1,15 @@
-export default function Header(){
+import Link from "next/link";
+import logoImg from "@/assets/logo.png";
+ 
+export default function MainHeader(){
     return (
     <>
-    <h2>header - Happy Learning Next.js</h2>
+      <header>
+        <Link href='/'>
+             <img src={logoImg.src} alt="A Plate with food on it"/>
+             Next level Food
+        </Link>
+      </header>
     </>
     );
 }

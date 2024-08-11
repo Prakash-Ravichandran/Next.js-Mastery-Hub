@@ -163,8 +163,13 @@ Important: These filenames are only reserved when creating them inside of the ap
 
 1. set the lazy loading automatically
 2. sets width, height based on the viewport size.
-
 3. serves images in the best format that the individual browsers understand (For eg: .webp in chrome).
+
+- View the browser console:
+![image](https://github.com/user-attachments/assets/6d663ca7-ca15-474b-9437-406db703b574)
+
+- Use ```priority``` attribute for tells the browser that the image should be rendered as much as soon.
+![image](https://github.com/user-attachments/assets/051d9f71-ac9e-41b8-91a7-1b4a1843b5d9)
 
 
 

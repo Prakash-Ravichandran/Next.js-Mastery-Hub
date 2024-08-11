@@ -151,6 +151,21 @@ Important: These filenames are only reserved when creating them inside of the ap
 
 - CSS Modules locally scope CSS by automatically creating a unique class name. This allows you to use the same class name in different files without worrying about collisions. This behavior makes CSS Modules the ideal way to include component-level CSS.
 
+### 101. optimizing images with Next.js Image Component.
+
+
+```
+ Native:  <img src={logoImg.src} alt="A Plate with food on it"/>
+ Next.js: <Image src={logoImg} alt="A Plate with food on it"/>
+
+```
+- Advantages of <Image> in Next.js:
+
+1. set the lazy loading automatically
+2. sets width, height based on the viewport size.
+
+3. serves images in the best format that the individual browsers understand (For eg: .webp in chrome).
+
 
 
 

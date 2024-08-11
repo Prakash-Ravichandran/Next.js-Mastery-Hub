@@ -142,7 +142,7 @@ Important: These filenames are only reserved when creating them inside of the ap
 - In next.js we can directly import images from the assets/, and its imported as an object (logoImg) and we can start assigning it to the src attribute of image.
 
 
-### 100. Styles your Next.js App
+### 100. Style your Next.js App
 
 - [CSS Modules](https://nextjs.org/docs/app/building-your-application/styling/css)
 

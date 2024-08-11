@@ -142,8 +142,14 @@ Important: These filenames are only reserved when creating them inside of the ap
 - In next.js we can directly import images from the assets/, and its imported as an object (logoImg) and we can start assigning it to the src attribute of image.
 
 
+### 100. Styles your Next.js App
+
+- [CSS Modules](https://nextjs.org/docs/app/building-your-application/styling/css)
 
 
+- Next.js has built-in support for CSS Modules using the ```.module.css``` extension.
+
+- CSS Modules locally scope CSS by automatically creating a unique class name. This allows you to use the same class name in different files without worrying about collisions. This behavior makes CSS Modules the ideal way to include component-level CSS.
 
 
 

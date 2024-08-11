@@ -173,6 +173,21 @@ Important: These filenames are only reserved when creating them inside of the ap
 - Use ```priority``` attribute to tell the browser that the image should be rendered as much as soon.
 ![image](https://github.com/user-attachments/assets/051d9f71-ac9e-41b8-91a7-1b4a1843b5d9)
 
+### 105. React server components vs client components
+
+Advantages of server components/Next.js:
+
+1. Less size of client-side javascript code.
+2. Best for SEO operation, the google web search page crawlers see the complete finished content  on the web.
+
+Note: By default, all React components (in next.js) are react server components.
+
+Client component: (Explicitly tell next.js that its a client component by using "use client" ).
+
+1. Browser API - setInterval, setTimeout>
+2. Events - onClick() / other events.
+3. useState(), useEffect Hooks must be exevuted on the browser/ client side.
+
 
 
 

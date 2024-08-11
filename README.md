@@ -173,7 +173,7 @@ Important: These filenames are only reserved when creating them inside of the ap
 - Use ```priority``` attribute to tell the browser that the image should be rendered as much as soon.
 ![image](https://github.com/user-attachments/assets/051d9f71-ac9e-41b8-91a7-1b4a1843b5d9)
 
-### 105. React server components vs client components
+### 105. React server components vs client components - edited/
 
 Advantages of server components/Next.js:
 

@@ -153,6 +153,7 @@ Important: These filenames are only reserved when creating them inside of the ap
 
 ### 101. optimizing images with Next.js Image Component.
 
+- [optimize-next-image](https://nextjs.org/docs/pages/building-your-application/optimizing/images)
 
 ```
  Native:  <img src={logoImg.src} alt="A Plate with food on it"/>

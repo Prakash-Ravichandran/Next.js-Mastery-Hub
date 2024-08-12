@@ -40,3 +40,11 @@ body {
   font-weight: 500;
   color: #ddd8d8;
 }
+.route{
+  text-decoration: none;
+  color: #ddd6cb;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+

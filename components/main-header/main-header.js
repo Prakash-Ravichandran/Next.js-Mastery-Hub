@@ -22,6 +22,9 @@ export default function MainHeader(){
                 <li>
                     <Link href="/ssr">SSR route</Link>
                 </li>
+                <li>
+                    <Link href="/ssr">CSR route</Link>
+                </li>
             </ul>
          </nav>
         </header>

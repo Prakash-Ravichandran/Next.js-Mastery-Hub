@@ -209,5 +209,21 @@ In case of not knowing the width and height of the image in advance. The only so
 - run() is used when you are modifying data.
 
 
+### 110. Adding a Loading Page
 
+-   This below line is responsible for  creating a delay while we reload the browser refresh
+
+```
+export async function getMeals() {
+    await new Promise((resolve) => setTimeout(resolve,10000)) // a simple arbitrary delay - just to simulate an action that takes longer.
+    return db.prepare('SELECT * FROM meals').all();
+}
+```
+
+Next.js by default shows the data from the cached memory when we are switching between multiple routes, it does shows the data from the response only when we are hard reloading the page.
+
+
+- loading.js is a reserved filename that provides a fallback until the data is loaded.
+
+[Loading-reference](https://nextjs.org/docs/app/api-reference/file-conventions/loading)
 

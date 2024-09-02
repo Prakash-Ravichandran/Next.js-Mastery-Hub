@@ -188,7 +188,7 @@ Client component: (Explicitly tell next.js that its a client component by using 
 2. Events - onClick() / other events.
 3. useState(), useEffect Hooks must be exevuted on the browser/ client side.
 
-### 105. React server components vs client components
+### 107. Outputting Meals Data & Images with Unknown Dimensions.
 
 
 The Next.js Image tag optimizes the height and width of the image that is available at the build time only. </br>

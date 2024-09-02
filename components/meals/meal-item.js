@@ -1,5 +1,6 @@
 import classes from './meal-item.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function MealItem ({title, slug, image, summary, creator }){
     return (

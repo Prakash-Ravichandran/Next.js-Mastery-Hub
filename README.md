@@ -227,3 +227,17 @@ Next.js by default shows the data from the cached memory when we are switching b
 
 [Loading-reference](https://nextjs.org/docs/app/api-reference/file-conventions/loading)
 
+
+### 111. Add Suspense 
+
+- we can also add suspense for specific parts of the page so that it can be shown for that portion alone.
+
+### 112. Handling Errors
+
+- We can have the error.js file in the specific folder so that it handles the error occured in that folder alone. Even if we add the error.js in the root it catches the error occured in the root directories.
+
+- The Error.js will handle the layers of erros depending on where we are placing the error.js component.
+- The Actual error is by default hidden by Next.js to the users to protect any information that shouldn't be exposed at any cost.
+
+
+

@@ -199,7 +199,8 @@ Solution: use "fill" as a prop.
 In case of not knowing the width and height of the image in advance. The only solution is to use the fill prop.
 
 ### 108. Introduce SQLite package 
-[better-sqlite3](https://www.npmjs.com/package/better-sqlite3)
+
+- [better-sqlite3](https://www.npmjs.com/package/better-sqlite3)
 
 
 

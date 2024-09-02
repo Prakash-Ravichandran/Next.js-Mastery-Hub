@@ -203,5 +203,11 @@ In case of not knowing the width and height of the image in advance. The only so
 - [better-sqlite3](https://www.npmjs.com/package/better-sqlite3)
 
 
+### 109. Fetching Data By Leveraging NextJS & Fullstack Capabilities
+
+- All() is used when your fetching data.
+- run() is used when you are modifying data.
+
+
 
 

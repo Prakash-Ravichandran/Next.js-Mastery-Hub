@@ -4,12 +4,9 @@ import Link from "next/link";
 import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 import Loading from "./loading-out";
-import dynamic from "next/dynamic";
 
 
-// const MealsComponent = dynamic(() => import('./'), {ssr: false})
-
-async function Meals() {
+async function Meals({meals}) {
   const meals = await getMeals();
 
   return (
@@ -35,7 +32,7 @@ export default async function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <Suspense fallback={<p style={{color : 'white'}}> test loading... </p>}>
+        <Suspense fallback={<Loading/>}>
            <Meals />
         </Suspense>
       </main>

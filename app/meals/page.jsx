@@ -35,7 +35,7 @@ export default async function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <Suspense fallback={<p> test loading... </p>}>
+        <Suspense fallback={<p style={{color : 'white'}}> test loading... </p>}>
            <Meals />
         </Suspense>
       </main>

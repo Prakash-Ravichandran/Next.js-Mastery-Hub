@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import Loading from "./loading-out";
 
 
-async function Meals({meals}) {
+async function Meals() {
   const meals = await getMeals();
 
   return (

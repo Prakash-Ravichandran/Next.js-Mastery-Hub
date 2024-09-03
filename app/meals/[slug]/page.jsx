@@ -2,9 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { getMeal } from "@/lib/meals";
 import classes from "./page.module.css";
+import { notFound } from "next/navigation";
 
 export default function mealDetailPage({ params }) {
   const meal = getMeal(params.slug);
+
+  meal ? null : notFound(); 
+
   meal.instructions = meal.instructions.replace(/\n/g, "<br/>");
 
   return (

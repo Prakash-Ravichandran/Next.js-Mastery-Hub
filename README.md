@@ -240,4 +240,8 @@ Next.js by default shows the data from the cached memory when we are switching b
 - The Actual error is by default hidden by Next.js to the users to protect any information that shouldn't be exposed at any cost.
 
 
+### 114. - Fix suspense not working in next.js 
+
+[fix-nextjs-suspense](https://nextjs.org/docs/app/building-your-application/deploying#streaming-and-suspense)
+
 

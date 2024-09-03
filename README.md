@@ -245,3 +245,13 @@ Next.js by default shows the data from the cached memory when we are switching b
 [fix-nextjs-suspense](https://nextjs.org/docs/app/building-your-application/deploying#streaming-and-suspense)
 
 
+### 115. Throwing Not Found Errors For Individual Meals 
+
+- The notFound() from the spark-navigation calls the closest not-found.js and shows them upon the not-found meal.
+
+```
+  meal ? null : notFound(); 
+
+```
+
+

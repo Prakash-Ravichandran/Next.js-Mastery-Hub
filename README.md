@@ -271,3 +271,8 @@ For a function to be named as server function we have to use it explicitly insid
 
   
 ```
+
+### 121. Storing Server Actions in separate Files
+
+- The Next.js builder while building the project, it can't separate the client component and server component.
+- we actually separated it and using them, but still after separating the server component we still use both in the same file. 

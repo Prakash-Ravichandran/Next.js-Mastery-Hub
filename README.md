@@ -267,12 +267,15 @@ The readAsDataURL() - doesn't return anything - not a promise, not a file but in
 For a function to be named as server function we have to use it explicitly inside the first line of the function.
 
 ```
-         title : formData.get('title'), // the attribute here specifies the name of the html attribute
+title : formData.get('title'), // the attribute here specifies the name of the html attribute
 
-  
 ```
 
 ### 121. Storing Server Actions in separate Files
 
 - The Next.js builder while building the project, it can't separate the client component and server component.
 - we actually separated it and using them, but still after separating the server component we still use both in the same file. 
+
+### 122. Slugify to protect dangerouslySetInnerHtml
+
+- Use XSS package to protect the scripts from cross-site scripting issues.

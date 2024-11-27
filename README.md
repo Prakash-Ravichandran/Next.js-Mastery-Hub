@@ -279,3 +279,18 @@ title : formData.get('title'), // the attribute here specifies the name of the h
 ### 122. Slugify to protect dangerouslySetInnerHtml
 
 - Use XSS package to protect the scripts from cross-site scripting issues.
+
+
+### 123. Add SaveMeal using Server Actions
+
+- Meals can be saved in both the file and in database.
+
+### 124. Managing FormSubmission status with useFormStatus() hook
+
+```
+ We are going to update the button text from submit to submitting...
+ It can be done using useFormStatus() from "react-dom", but to use this we have useFormStatus to be in "use client directive".
+ To implement that submit button, we should use them as a separate component with conditional rendering..
+ ```
+After this implementation, the button text changes from share meals to submitting... based on the pending status from useFormStatus hook.
+![image](https://github.com/user-attachments/assets/82704ae2-9dab-4038-a9de-254e82e770e1)

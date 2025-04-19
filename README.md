@@ -307,3 +307,13 @@ For Some Reasons React changed the useFormState() - from 'react-dom' hook to use
 ![Image](https://github.com/user-attachments/assets/486dc62f-295c-4296-9f56-c1b0da9ebb0d)
 
 useActionState ref: [useActionState](https://react.dev/reference/react/useActionState)
+
+### 126, 127 - Build for Production and revalidatePath
+
+- While running `npm run build`, next.js pre-renders all the pages which can be pre-fetched during the build process.
+- Next.js then caches the pages and never revalidates that pages unless we say next.js using - [revalidatePath](https://nextjs.org/docs/app/api-reference/functions/revalidatePath)
+- By Default the revalidatePath() function only validates pages directly childrens, to validate nested pages add 'layout' as a second argument.
+
+![Image](https://github.com/user-attachments/assets/79034259-1f30-45ba-a884-a0d69a72447f)
+
+- After adding revalidatePath('/meals'), the console.log('fetching') gives output, now it refetches.

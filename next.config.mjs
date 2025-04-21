@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // experimental: {
-  //   serverActions: true, // 👈 Must be enabled
-  // },
-};
+const nextConfig = {};
 
 export default nextConfig;

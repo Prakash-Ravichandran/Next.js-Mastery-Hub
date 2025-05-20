@@ -81,3 +81,14 @@ export default function RootLayout({ children, sidebar, main }) {
 - Next.js shows NotFound page for the parallel setup related folders, when we don't as fallback dynamic route for one (@latest/default.js, page.js), if provided to another (@archive/[year]/page.js)
 
 - @latest/default.js is enough if page.js inside latest and default are same.
+
+### 143. Catch All Route Segments
+
+[Catch-All-Route-Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
+
+| Route Example                  | URL Path      | `slug` Parameter Value |
+| ------------------------------ | ------------- | ---------------------- |
+| `app/shop/[[...slug]]/page.js` | `/shop`       | `undefined`            |
+| `app/shop/[[...slug]]/page.js` | `/shop/a`     | `['a']`                |
+| `app/shop/[[...slug]]/page.js` | `/shop/a/b`   | `['a', 'b']`           |
+| `app/shop/[[...slug]]/page.js` | `/shop/a/b/c` | `['a', 'b', 'c']`      |

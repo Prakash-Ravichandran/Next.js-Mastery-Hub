@@ -35,6 +35,108 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Debugging Sever Component in Chrome Devttools
+
+Okay, here's a concise summary and a clear note for your `README.md` about debugging server-side Next.js components, specifically tailored for Windows/PowerShell and Chrome DevTools, incorporating the common challenges we discussed.
+
+---
+
+## Debugging Server-Side Next.js Components
+
+Debugging Server Components in Next.js requires connecting a Node.js debugger to the Next.js development server. Unlike client-side components, server components execute on the Node.js server, not directly in the browser's JavaScript engine.
+
+This guide outlines how to set up server-side debugging using Chrome DevTools, addressing common pitfalls on Windows/PowerShell.
+
+### Setup for Debugging
+
+1.  **Install `cross-env` (Development Dependency):**
+    `cross-env` allows setting environment variables uniformly across different operating systems in your `package.json` scripts.
+
+    ```bash
+    npm install cross-env --save-dev
+    # OR
+    yarn add cross-env --dev
+    ```
+
+2.  **Update `package.json` Script:**
+    Modify your `dev` script to start the Next.js server with the Node.js inspector enabled. Use `SET` for Windows compatibility within `package.json`.
+
+    ```json
+    // package.json
+    {
+      "scripts": {
+        "dev": "SET NODE_OPTIONS='--inspect' && next dev"
+      }
+    }
+    ```
+
+    - **Note:** If port `9229` (default for inspector) is in use, Node.js will automatically try the next available port (e.g., `9230`). Pay attention to your terminal output for the exact port.
+
+3.  **Start the Development Server:**
+    Run your development server as usual.
+
+    ```bash
+    npm run dev
+    ```
+
+    You should see output similar to this in your terminal, indicating the debugger port:
+
+    ```
+    Debugger listening on ws://127.0.0.1:9230/...
+    For help, see: https://nodejs.org/en/docs/inspector
+    ```
+
+    _(The port might be 9229 or another available port if 9229 is in use.)_
+
+### Connecting Chrome DevTools
+
+1.  **Open Chrome DevTools for Node.js:**
+
+    - In a new Chrome tab, navigate to: `chrome://inspect`
+    - **Crucially, ensure you are on the main `chrome://inspect` page, NOT `chrome://inspect/#devices` or `#pages`.**
+
+2.  **Configure Network Targets:**
+
+    - In the "Remote Target" section on `chrome://inspect`, click the **"Configure..."** button.
+    - In the "Target discovery settings" dialog, ensure `localhost:9230` (or whatever port was shown in your terminal) is added under "Discover network targets". Click "Done".
+    -
+    - Chrome inspect options:
+
+![Image](https://github.com/user-attachments/assets/dbfcba5f-c620-4c9a-a81d-3efe67921cc7)
+
+3.  **Inspect Your Application:**
+
+    - Your Next.js application should now appear under "Remote Target" (e.g., "Next.js Page Routing & Rendering").
+    - Click the **"inspect" link/button** next to your application. This will open a **new, dedicated DevTools window**.
+
+### Debugging Your Server-Side Code
+
+1.  **Navigate to the "Sources" Tab:**
+
+    - In the _new_ DevTools window (the one opened by clicking "inspect"), go to the **"Sources"** tab.
+
+2.  **Find Your Server Components:**
+
+    - Press **`Ctrl + P` (or `Cmd + P` on Mac)** to open the "Go to file" search bar.
+    - Type the name of your server-side component file (e.g., `page.js`, `layout.js`, `route.js`, etc.).
+    - **Look for entries that start with `webpack://`** (e.g., `webpack://_N_E/./app/your-path/page.js`). These are your original source files mapped by Webpack for server-side debugging.
+    - Do **not** look for them under `localhost:3000` in the file tree, as that primarily represents client-side bundles.
+
+3.  **Set Breakpoints:**
+
+    - Once your server component file is open, click on a line number in the gutter (to the left of the code) to set a breakpoint.
+
+4.  **Trigger the Debugger:**
+
+    - Refresh the corresponding page in your browser (e.g., `http://localhost:3000/archive`).
+    - When the server processes the request and executes the code at your breakpoint, the DevTools window will automatically pause, allowing you to inspect variables, step through code, and diagnose issues.
+
+---
+
+Output:
+
+![Image](https://github.com/user-attachments/assets/8ca702f5-f430-4df8-8ac9-f750834b49b5)
+
 ## Notes
 
 # 03_Routing_Rendering

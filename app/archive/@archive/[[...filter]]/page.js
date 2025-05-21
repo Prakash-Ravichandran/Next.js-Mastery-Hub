@@ -17,11 +17,14 @@ export default function FilteredNewsPage({ params }) {
   let links = getAvailableNewsYears();
 
   if (selectedYear && !selectedMonth) {
+    debugger;
+
     news = getNewsForYear(selectedYear);
     links = getAvailableNewsMonths(selectedYear);
   }
 
   if (selectedYear && selectedMonth) {
+    debugger;
     news = getNewsForYearAndMonth(selectedYear, selectedMonth);
     links = [];
   }

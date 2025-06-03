@@ -194,3 +194,13 @@ export default function RootLayout({ children, sidebar, main }) {
 | `app/shop/[[...slug]]/page.js` | `/shop/a`     | `['a']`                |
 | `app/shop/[[...slug]]/page.js` | `/shop/a/b`   | `['a', 'b']`           |
 | `app/shop/[[...slug]]/page.js` | `/shop/a/b/c` | `['a', 'b', 'c']`      |
+
+### 147. Server vs Client Component
+
+![Image](https://github.com/user-attachments/assets/8bc8489d-d3db-4d7c-a49b-3b58380848a7)
+
+- By default all component in Next.js are React server components - they are completely rendered on the server-side.
+- Client Components
+- In a Next.js Application, errors can also occur because of the client-side as well. Hence the error.js file will be a client component in this case.
+- Prefer the client component as small as possible, so that the most of the logics/components stays in the server-side rendering itself.
+- Rendering everything on the server is the better strategy.

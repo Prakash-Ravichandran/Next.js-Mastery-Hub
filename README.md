@@ -204,3 +204,7 @@ export default function RootLayout({ children, sidebar, main }) {
 - In a Next.js Application, errors can also occur because of the client-side as well. Hence the error.js file will be a client component in this case.
 - Prefer the client component as small as possible, so that the most of the logics/components stays in the server-side rendering itself.
 - Rendering everything on the server is the better strategy.
+
+> > > Segregating a part of server component as client component in nav-link is a good practice because of next.js apps prefers most of components as server components.
+
+- Also, Rendering everything on the server is the better strategy.

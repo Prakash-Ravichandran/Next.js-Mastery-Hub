@@ -205,6 +205,10 @@ export default function RootLayout({ children, sidebar, main }) {
 - Prefer the client component as small as possible, so that the most of the logics/components stays in the server-side rendering itself.
 - Rendering everything on the server is the better strategy.
 
-> > > Segregating a part of server component as client component in nav-link is a good practice because of next.js apps prefers most of components as server components.
+### 147. Segregating client component from server component
+
+- [commit](https://github.com/Prakash-Ravichandran/Next.js-Mastery-Hub/commit/e7e09d395c90c5ce87489f61d33401866c931b68)
+
+> Segregating a part of server component as client component in nav-link is a good practice because of next.js apps prefers most of components as server components.
 
 - Also, Rendering everything on the server is the better strategy.

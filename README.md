@@ -212,3 +212,9 @@ export default function RootLayout({ children, sidebar, main }) {
 > Segregating a part of server component as client component in nav-link is a good practice because of next.js apps prefers most of components as server components.
 
 - Also, Rendering everything on the server is the better strategy.
+
+### 148. Nested routes inside dynamic route
+
+- Right now in the route `/news/beaver-plague` is the detail page along with the news details, now the nested route inside a dynamic can result in viewing the image as a separate route `/news/beaver-plague/bearImage`.
+
+![Image](https://github.com/user-attachments/assets/b34f4449-9897-4070-9fc4-8feac5010afe)
